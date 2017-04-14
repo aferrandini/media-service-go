@@ -1,0 +1,47 @@
+{
+  "medias": [
+    {
+      "id": "af3a8434-2126-11e7-93ae-92361f002671",
+      "name": "Media example 1",
+      "enabled": true,
+      "cdns": [
+        {
+          "id": "af3a86d2-2126-11e7-93ae-92361f002671",
+          "domain": "des-static.media-example-1.com"
+        }
+      ],
+      "domains": [
+        {
+          "id": "af3a88da-2126-11e7-93ae-92361f002671",
+          "domain": "des.media-example-1.es"
+        },
+        {
+          "id": "af3a8eca-2126-11e7-93ae-92361f002671",
+          "domain": "local.media-example-1.es"
+        }
+      ],
+      "provinces": [
+        {
+          "id": "af3a9154-2126-11e7-93ae-92361f002671",
+          "province": "Murcia"
+        }
+      ]
+    },
+    {
+      "id": "7c2f9028-00b4-4416-a0e6-4e941fcfe046",
+      "name": "Media Example 2",
+      "enabled": false,
+      "cdns": null,
+      "domains": null,
+      "provinces": null
+    },
+    {
+      "id": "9740ec6e-0323-4806-98e3-16b845662a07",
+      "name": "Media Example 3",
+      "enabled": true,
+      "cdns": null,
+      "domains": null,
+      "provinces": null
+    }
+  ]
+}
