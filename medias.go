@@ -9,14 +9,20 @@ import (
 )
 
 func main() {
-	address := os.Getenv("MEDIAS_SERVER_ADDRESS")
-	if "" == address {
-		address = ":8080"
+	jsonFilename := os.Getenv("MEDIAS_JSON_FILE")
+	if "" == jsonFilename {
+		fmt.Print("Please consider declaring MEDIAS_JSON_FILE environment var. Default value './var/medias.json' will be used.\n")
 	}
 
+	serverAddress := os.Getenv("MEDIAS_SERVER_ADDRESS")
+	if "" == serverAddress {
+		serverAddress = ":8080"
+	}
+	fmt.Println("Starting server at " + serverAddress)
+
+
 	http.Handle("/", webservice.NewRouter())
-	fmt.Println("Starting server at " + address)
-	err := http.ListenAndServe(address, nil)
+	err := http.ListenAndServe(serverAddress, nil)
 
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
