@@ -20,6 +20,14 @@
           "domain": "local.media-example-1.es"
         }
       ],
+      "editions": [
+        {
+          "id": "b6198dbd-dac2-4adf-917b-01da01cbc6f2",
+          "name": "Granada",
+          "path": "granada",
+          "default": true
+        }
+      ],
       "provinces": [
         {
           "id": "af3a9154-2126-11e7-93ae-92361f002671",
